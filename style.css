@@ -1,0 +1,266 @@
+/* wrapper */
+.container{
+    max-width: 980px;
+    padding: 0 20px;
+    margin:auto;
+}
+
+/* header  */
+
+.desktop-header{
+    background-color: #38ACEC;;
+    height: 20vh;
+}
+.desktop-header__logo{ 
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    background-color:white;
+    color: #38ACEC;
+    text-decoration: none;
+    box-shadow: 15px 15px 0px #4aa7ee;
+}
+.desktop-header__logo-icon{
+    font-family: sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    line-height: 100px;
+}
+.desktop-header__hamburger{
+    float:right;
+    margin-top: 40px;  
+}
+.desktop-header__hamburger-unit{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 3px;
+    border-radius: 50px;
+}
+
+
+/* top section */
+
+.hero-section{
+    height: calc(80vh - 40px);
+    background-color: #38ACEC;
+    color: white;
+}
+.hero-section__content{
+    font-family: sans-serif;
+    text-align: right;
+    padding: 30px;
+ }
+ .hero-section__heading{
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 4rem;
+}
+.hero-section__description{
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 2rem;
+}
+.hero-section__download{
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: #38ACEC;
+    color: white;
+}
+.hero-section__download-span{
+    text-transform: uppercase;
+    font-size: small;
+    letter-spacing: 1px;
+}
+.hero-section__download-figure{
+    display: inline;
+}
+.hero-section__main-img{
+   margin-left: 50px ;
+}
+
+/* content section */
+
+.desktop-third-section__gadget{
+    display: flex;
+    justify-content: flex-start;
+}
+.desktop-third-section__gadget-icon{
+    width: 100px
+}
+.desktop-footer__external-links{
+    display: flex;
+}
+.desktop-second-section__description{
+    width: 500px;
+}
+.desktop-second-section__sub-description{
+    width: 500px;
+    border-left: 5px solid #7CB9E8;
+    padding-left: 10px;
+}
+
+.desktop-second-section{
+    background-color: #F8F8F8;
+    position:relative;
+    z-index:2;
+    width:auto;
+}
+.desktop-footer__article{
+    background-color: #F8F8F8;
+}
+.desktop-like-section{
+    background-color: #3EB489;
+}
+
+
+/* normalize.css */
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  h1,h2,figure{
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
