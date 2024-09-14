@@ -4,6 +4,9 @@
     padding: 0 20px;
     margin:auto;
 }
+body{
+  font-family: sans-serif;
+}
 
 /* header  */
 
@@ -22,7 +25,6 @@
     box-shadow: 15px 15px 0px #4aa7ee;
 }
 .desktop-header__logo-icon{
-    font-family: sans-serif;
     font-size: 3.5rem;
     font-weight: 500;
     display: block;
@@ -51,7 +53,6 @@
     color: white;
 }
 .hero-section__content{
-    font-family: sans-serif;
     text-align: right;
     padding: 30px;
  }
@@ -86,6 +87,92 @@
 
 /* content section */
 
+/* second section */
+
+.desktop-second-section{
+  position: relative;
+  background-color: rgb(243, 239, 239);
+  height: 60vh;
+  padding: 120px 0 100px ;
+  z-index: 3;
+  overflow: hidden;
+}
+.desktop-second-section__heading{
+  font-size: xx-large;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+ .desktop-second-section__sub-description{
+  text-align: justify;
+  border-left: 5px solid #7CB9E8;
+  padding-left: 20px;
+} 
+.desktop-second-section__content{
+  max-width: 500px;
+  text-align: left;
+  line-height: 1.5rem;
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+
+}
+.desktop-second-section__button{
+  width: 150px;
+  height: 50px;
+  border: 1px solid #3EB489;
+  background-color: transparent;
+  color: #3EB489;
+  margin-top: 30px;
+}
+.desktop-second-section__img{
+margin-left: auto;
+display: block;
+width: 400px;
+position:relative;
+bottom: 350px;
+left:250px; 
+}
+
+
+/* like section */
+.desktop-like-section{
+  background-color: #3EB489;
+  height: 30vh;
+  display: flex;
+  color: white;
+}
+.desktop-like-section__content{
+  margin: auto;
+  display: block;
+  width: fit-content;
+  align-items: center;
+
+}
+.desktop-like-section__heading{
+  font-size: xx-large;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.desktop-like-section__button{
+   width: 170px;
+   height: 50px;
+   background-color: transparent;
+   border: 1px solid white;
+   color: white;
+   margin: 45px;
+}
+.desktop-third-section{
+  position: relative;
+  z-index: 1;
+}
+
+
+/* footer section */
+.desktop-footer{
+  height: 60vh;
+  background-color:rgb(243, 239, 239);
+}
+
+
 .desktop-third-section__gadget{
     display: flex;
     justify-content: flex-start;
@@ -96,27 +183,13 @@
 .desktop-footer__external-links{
     display: flex;
 }
-.desktop-second-section__description{
-    width: 500px;
-}
-.desktop-second-section__sub-description{
-    width: 500px;
-    border-left: 5px solid #7CB9E8;
-    padding-left: 10px;
+
+
+
+.desktop-footer__article{
+ 
 }
 
-.desktop-second-section{
-    background-color: #F8F8F8;
-    position:relative;
-    z-index:2;
-    width:auto;
-}
-.desktop-footer__article{
-    background-color: #F8F8F8;
-}
-.desktop-like-section{
-    background-color: #3EB489;
-}
 
 
 /* normalize.css */
@@ -211,6 +284,9 @@ html {
   b,
   strong {
     font-weight: bolder;
+  }
+  figure{
+    display: inline;
   }
   
   /**
