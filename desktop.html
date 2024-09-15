@@ -38,7 +38,7 @@
             <figure class="hero-section__main-img">
                 <picture>
                     <source media="(max-width:980px)" srcset="./assets/iphone5_top.png">
-                    <img src="./assets/iphone5_top.png" alt="iphone-five">
+                    <img class='hero-section__picture' src="./assets/iphone5_top.png" alt="iphone-five">
                   </picture>
             </figure>
             </div>
@@ -110,35 +110,39 @@
     <footer class="desktop-footer">
         <div class="container">
         <article class="desktop-footer__article">
-            <div class="desktop-footer__external-links">
-            <a href="#">
-              <figure>
-                  <img src="./assets/dribbble.png" alt="dribble-icon">
-              </figure>
-            </a>
-            <a href="#">
+            <div class="desktop-footer__nav">
+                <a href="#" class="desktop-footer__icon">
                 <figure>
-                    <img src="./assets/facebook.png" alt="facebook-icon">
+                    <img src="./assets/dribbble.png" alt="dribble-icon">
                 </figure>
-              </a>
-              <a href="#">
-                <figure>
-                    <img src="./assets/twitter.png" alt="twitter-icon">
-                </figure>
-              </a>
-              <a href="#">
-                <figure>
-                    <img src="./assets/mail.png" alt="mail-icon">
-                </figure>
-              </a>
+                </a>
+                <a href="#" class="desktop-footer__icon">
+                    <figure>
+                        <img src="./assets/facebook.png" alt="facebook-icon">
+                    </figure>
+                </a>
+                <a href="#" class="desktop-footer__icon">
+                    <figure>
+                        <img src="./assets/twitter.png" alt="twitter-icon">
+                    </figure>
+                </a>
+                <a href="#" class="desktop-footer__icon">
+                    <figure>
+                        <img src="./assets/mail.png" alt="mail-icon">
+                    </figure>
+                </a>     
+                <div class="desktop-footer__subscription">
+                    <span>Newsletter Subscription</span>
+                <input class='desktop-footer__email' type='email' placeholder="Enter Email">
+                </div>
+                
             </div>
-              <span>Newsletter Subscription</span>
-              <input type='email' placeholder="Enter Email">
-          </article>
-     <p> © 2024
-        <a href="#">Perth</a>
-         Breeding pixels since the naughties
-    </p>
+ 
+          </article>     
+      <p class="desktop-footer__copyright"> © 2024
+        <a href="#" class="desktop-footer__copyright-nav">Perth</a>
+          Breeding pixels since the naughties
+      </p>
         </div>
     </footer>
 </body>

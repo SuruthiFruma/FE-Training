@@ -45,7 +45,7 @@ body{
 }
 
 
-/* top section */
+/* hero section */
 
 .hero-section{
     height: calc(80vh - 40px);
@@ -55,6 +55,8 @@ body{
 .hero-section__content{
     text-align: right;
     padding: 30px;
+    position: relative;
+    top:60px
  }
  .hero-section__heading{
     letter-spacing: 3px;
@@ -67,11 +69,12 @@ body{
     font-size: 2rem;
 }
 .hero-section__download{
-    width: 150px;
+    width: 200px;
     height: 50px;
-    border: 1px solid white;
+    border: 2px solid white;
     background-color: #38ACEC;
     color: white;
+
 }
 .hero-section__download-span{
     text-transform: uppercase;
@@ -83,12 +86,17 @@ body{
 }
 .hero-section__main-img{
    margin-left: 50px ;
+   position: relative;
+   top:10px
+}
+.hero-section__picture{
+  width: 250px;
+
 }
 
 /* content section */
 
 /* second section */
-
 .desktop-second-section{
   position: relative;
   background-color: rgb(243, 239, 239);
@@ -158,7 +166,7 @@ left:250px;
    background-color: transparent;
    border: 1px solid white;
    color: white;
-   margin: 45px;
+   margin: 40px;
 }
 .desktop-third-section{
   position: relative;
@@ -168,9 +176,57 @@ left:250px;
 
 /* footer section */
 .desktop-footer{
-  height: 60vh;
+  height: 65vh;
   background-color:rgb(243, 239, 239);
+  
 }
+.desktop-footer__nav{
+ text-align: center;
+ padding-top: 150px;
+}
+.desktop-footer__article{
+height: 65vh;
+background-color:rgb(243, 239, 239);
+}
+.desktop-footer__icon{
+  margin-top: 40px;
+  text-decoration: none;
+}
+.desktop-footer__external-links{
+
+}
+.desktop-footer__icon img{
+  margin: 20px;
+
+}
+.desktop-footer__subscription {
+
+}
+.desktop-footer__email{
+  margin: 30px;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  padding-left: 20px;
+}
+.desktop-footer__copyright{
+  text-align: center;
+  height: 10vh;
+  padding-top: 40px;
+}
+.desktop-footer__copyright-nav{
+  color: lightblue;
+}
+
+
+
+
+
+
+
+
+
 
 
 .desktop-third-section__gadget{
@@ -180,15 +236,11 @@ left:250px;
 .desktop-third-section__gadget-icon{
     width: 100px
 }
-.desktop-footer__external-links{
-    display: flex;
-}
 
 
 
-.desktop-footer__article{
- 
-}
+
+
 
 
 
