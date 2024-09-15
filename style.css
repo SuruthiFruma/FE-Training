@@ -104,6 +104,7 @@ body{
   padding: 120px 0 100px ;
   z-index: 3;
   overflow: hidden;
+  color:gray
 }
 .desktop-second-section__heading{
   font-size: xx-large;
@@ -114,19 +115,21 @@ body{
   text-align: justify;
   border-left: 5px solid #7CB9E8;
   padding-left: 20px;
+  font-weight: 550;
 } 
 .desktop-second-section__content{
-  max-width: 500px;
+  max-width: 600px;
   text-align: left;
   line-height: 1.5rem;
   word-spacing: 1px;
   letter-spacing: 0.5px;
+   
 
 }
 .desktop-second-section__button{
   width: 150px;
   height: 50px;
-  border: 1px solid #3EB489;
+  border: 2px solid #3EB489;
   background-color: transparent;
   color: #3EB489;
   margin-top: 30px;
@@ -147,6 +150,8 @@ left:250px;
   height: 30vh;
   display: flex;
   color: white;
+  position: relative;
+  z-index: 3;
 }
 .desktop-like-section__content{
   margin: auto;
@@ -164,21 +169,16 @@ left:250px;
    width: 170px;
    height: 50px;
    background-color: transparent;
-   border: 1px solid white;
+   border: 2px solid white;
    color: white;
    margin: 40px;
 }
-.desktop-third-section{
-  position: relative;
-  z-index: 1;
-}
-
 
 /* footer section */
 .desktop-footer{
   height: 65vh;
   background-color:rgb(243, 239, 239);
-  
+  color: gray;
 }
 .desktop-footer__nav{
  text-align: center;
@@ -192,14 +192,8 @@ background-color:rgb(243, 239, 239);
   margin-top: 40px;
   text-decoration: none;
 }
-.desktop-footer__external-links{
-
-}
 .desktop-footer__icon img{
   margin: 20px;
-
-}
-.desktop-footer__subscription {
 
 }
 .desktop-footer__email{
@@ -224,19 +218,85 @@ background-color:rgb(243, 239, 239);
 
 
 
+/* third section */
+
+
+.desktop-third-section{
+  height: 80vh;
+  color: gray;
+}
+.desktop-third-section__content{
+  margin-left: auto;
+  display: block;
+  max-width: 500px;
+  margin-top: 60px;
 
 
 
-
+}
+.desktop-third-section__heading{
+  font-size: xx-large;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
 
 .desktop-third-section__gadget{
     display: flex;
     justify-content: flex-start;
+    position: relative;
+    right : 230px;
+    width: 1200px;
+    top:20px
 }
-.desktop-third-section__gadget-icon{
-    width: 100px
+.desktop-third-section__heading{
+padding: 10px;
 }
+.desktop-third-section__desc{
+  padding: 10px;
+  font-weight: 550;
+}
+.desktop-third-section__sub-desc{
+  padding: 10px;
+}
+.desktop-third-section__button{
+  padding: 10px;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+  background-color: transparent;
+  width: 200px;
+  height: 50px;
+}
+.desktop-third-section__picture{
+  width: 20px;
+  color: palevioletred;
 
+}
+.desktop-third-section__figure{
+  margin: 10px;
+}
+.desktop-third-section__gadget-icon1{
+  position: relative;
+  z-index: 2;
+}
+.desktop-third-section__gadget-icon2{
+  position: relative;
+  right: 150px;
+}
+.desktop-third-section__gadget-icon3{
+  position: relative;
+  right: 250px;
+}
+.desktop-third-section__gadget-icon4{
+  position: relative;
+  right: 300px;
+  top:30px;
+  z-index: 2;
+}
+.desktop-third-section__gadget-icon5{
+  position: relative;
+  /* right: 0px; */
+  right: 320px;
+}
 
 
 
