@@ -123,8 +123,6 @@ body{
   line-height: 1.5rem;
   word-spacing: 1px;
   letter-spacing: 0.5px;
-   
-
 }
 .desktop-second-section__button{
   width: 150px;
@@ -139,7 +137,7 @@ margin-left: auto;
 display: block;
 width: 400px;
 position:relative;
-bottom: 350px;
+bottom: 300px;
 left:250px; 
 }
 
@@ -230,26 +228,18 @@ background-color:rgb(243, 239, 239);
   display: block;
   max-width: 500px;
   margin-top: 60px;
-
-
-
 }
 .desktop-third-section__heading{
   font-size: xx-large;
   font-weight: 100;
   letter-spacing: 1px;
+  padding: 10px;
 }
-
 .desktop-third-section__gadget{
-    display: flex;
-    justify-content: flex-start;
     position: relative;
     right : 230px;
     width: 1200px;
     top:20px
-}
-.desktop-third-section__heading{
-padding: 10px;
 }
 .desktop-third-section__desc{
   padding: 10px;
@@ -273,6 +263,7 @@ padding: 10px;
 }
 .desktop-third-section__figure{
   margin: 10px;
+
 }
 .desktop-third-section__gadget-icon1{
   position: relative;
@@ -294,7 +285,6 @@ padding: 10px;
 }
 .desktop-third-section__gadget-icon5{
   position: relative;
-  /* right: 0px; */
   right: 320px;
 }
 
