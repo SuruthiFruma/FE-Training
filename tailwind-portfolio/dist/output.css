@@ -124,7 +124,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -557,9 +557,4 @@ video {
 .bg-orange-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 239 230 / var(--tw-bg-opacity));
-}
-
-.bg-orange-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 42 0 / var(--tw-bg-opacity));
 }
