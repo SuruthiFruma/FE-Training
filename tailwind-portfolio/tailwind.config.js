@@ -28,15 +28,15 @@ module.exports = {
         poppins: ['Poppins', 'sans-serif'],
       },
       fontSize: {
-        'xs': '0.667rem',
-        'sm': '0.778rem',
-        'base': '1.000rem',
-        'lg': '1.278rem',
-        'xl': '1.556rem',
-        '2xl': '1.944rem',
-        '3xl': '2.444rem',
-        '4xl': '3.056rem',
-        '5xl': '3.833rem',
+        'xs': '0.667rem', //12px
+        'sm': '0.778rem', //14px
+        'base': '1.000rem', //18px
+        'lg': '1.278rem', //23px
+        'xl': '1.556rem', //28px
+        '2xl': '1.944rem', //35px 
+        '3xl': '2.444rem', // 44px
+        '4xl': '3.056rem', // 55px
+        '5xl': '3.833rem', // 69px
       },
   },
   plugins: [],
