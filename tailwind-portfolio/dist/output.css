@@ -773,6 +773,14 @@ video {
   flex-shrink: 0;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
+.grow-0 {
+  flex-grow: 0;
+}
+
 .basis-1 {
   flex-basis: 0.25rem;
 }
@@ -831,6 +839,10 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -945,6 +957,10 @@ video {
   padding-right: 0.75rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1014,6 +1030,11 @@ video {
 .text-orange-400 {
   --tw-text-opacity: 1;
   color: rgb(255 130 51 / var(--tw-text-opacity));
+}
+
+.text-orange-500 {
+  --tw-text-opacity: 1;
+  color: rgb(255 99 0 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1104,6 +1125,14 @@ video {
 
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:grow-0 {
+    flex-grow: 0;
+  }
+
+  .md\:grow {
+    flex-grow: 1;
   }
 
   .md\:flex-row {
