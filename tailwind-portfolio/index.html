@@ -6,11 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    progress::-webkit-progress-bar {
+      background-color: #e5e7eb; 
+      border-radius: 8px;
+    }
+    progress::-webkit-progress-value {
+      background-color: #fd6f00; 
+      border-radius: 8px;
+    }
+  </style>
 </head>
 
 <body class="font-poppins">
 
-  <header>
+  <header class="sticky top-0 z-2 bg-white">
     <div class="container mx-auto px-3 text-black-500 font-normal text-base flex flex-row justify-between">
         <svg  href="#" width="322" height="175" viewBox="0 0 322 175" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <path d="M254.242 82.9365L260.818 96.8492C261.087 97.386 261.057 97.9079 260.729 98.4149C260.401 98.8921 259.939 99.1307 259.342 99.1307H254.511C253.765 99.1307 253.079 98.907 252.453 98.4597C251.856 98.0123 251.424 97.4308 251.156 96.715L247.979 87.5442C247.979 87.5144 247.964 87.4995 247.935 87.4995C247.905 87.4995 247.89 87.5144 247.89 87.5442L244.714 96.715C244.475 97.4308 244.043 98.0123 243.416 98.4597C242.82 98.907 242.134 99.1307 241.359 99.1307H236.706C236.139 99.1307 235.692 98.8921 235.364 98.4149C235.036 97.9079 234.991 97.386 235.23 96.8492L241.806 82.9365C241.895 82.6979 241.895 82.4593 241.806 82.2207L235.453 68.7554C235.215 68.2186 235.26 67.7116 235.588 67.2344C235.916 66.7274 236.363 66.4739 236.93 66.4739H241.537C242.313 66.4739 243.014 66.6976 243.64 67.1449C244.266 67.5624 244.699 68.1291 244.937 68.8448L248.069 77.613C248.069 77.6428 248.084 77.6577 248.114 77.6577C248.143 77.6577 248.158 77.6428 248.158 77.613L251.29 68.8448C251.528 68.1291 251.961 67.5624 252.587 67.1449C253.243 66.6976 253.944 66.4739 254.69 66.4739H259.118C259.715 66.4739 260.177 66.7274 260.505 67.2344C260.833 67.7116 260.863 68.2186 260.595 68.7554L254.242 82.2207C254.153 82.4593 254.153 82.6979 254.242 82.9365Z" fill="black" fill-opacity="0.5"/>
@@ -102,15 +112,16 @@
           <h1 class="text-lg font-semibold flex flex-col">Hi I am
             <span class="text-2xl font-semibold text-orange-400 ">Fawzi Sayed</span>
             <span class="text-black-500 font-bold text-[100px] leading-tight">UI & UX </span>
-            <span class="text-black-500 font-bold text-[100px] leading-tight ml-36">Designer</span>
+            <span class="text-black-500 font-bold text-[100px] leading-tight ml-56">Designer</span>
           </h1>
           <p class="text-black-500 font-normal text-base leading-7 tracking-wider">Lorem ipsum dolor sit
             amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium.
             Turpis tempus pharetra</p>
-          <button class="w-40 p-4 bg-orange-500 rounded-md text-center text-[white]">Hire Me</button>
+          <button class="w-40 p-4 bg-orange-500 rounded-md text-center text-[white] hover:bg-orange-400">Hire Me</button>
         </div>
 
         <div class="flex flex-col md:w-1/2 w-full gap-4 justify-center ">
+          
          <img class="w-3/4 h-3/4 rounded-full mx-auto" src="https://s3-alpha-sig.figma.com/img/8aeb/1fc9/979b379ab7f66745a5c557015bf995d5?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WL5KbIqw62LwCYqqmI8lZaCHI9VZQEDcAPO9ReQGEhcYSmlWVPbStnqUJXyZQZtEoM72oSsqLQ-nc8oD9Ros37pEFkj7AfJ64F0GzggLR4EvdYnEbohbMpuW4fdq0d0i87S2HNg9zVmh~CM3wYCTEHWwmMhJshQarJz5-7N6gfDwuTgjYWAudB~PVKcOiVmEe777L5dTMkSBmGhgE~NpdbrbyY9APsHuEp2nVqg-rCfi4svcrG2OfCvK6pp8H4bfVRNkItBdvmsbvrZOKdymGRTm7QtA1v-HDLf3s1cTxv8jNBX5aKAP1kVKY25Tc0WZkbuTtuyLC9UROemAk4EtFg__" alt="profile_pic_image">
           <div class="flex justify-center gap-8">
             <svg class="cursor-pointer w-9 h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
@@ -142,7 +153,8 @@
             </p>
             <div class=" flex flex-col gap-4">
               <span class="text-lg font-semibold">UX</span>
-              <progress class="w-9/12 h-2 bg-orange-500 rounded-full" value="97" max="100"> </progress>
+              <progress class="w-9/12 h-2 rounded-full" value="97" max="100" style="-webkit-appearance: none; appearance: none;">
+              </progress>
               <span class="text-lg font-semibold">Website Design</span>
               <progress class="w-9/12 h-2 bg-orange-500 rounded-full" value="94" max="100"> </progress>
               <span class="text-lg font-semibold">App Design</span>
@@ -162,8 +174,8 @@
         <p class="text-black-500 font-normal text-base leading-7 tracking-wider text-center mx-auto p-10">Lorem ipsum
           dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis
           pretium</p>
-        <div class="flex md:flex-row sm:flex-row flex-col gap-8">
-          <div class="md:w-1/2 sm:w-1/4 w-full bg-black-50">
+        <div class="flex lg:flex-row flex-col gap-8">
+          <div class="lg:w-1/2 w-full bg-black-50">
             <div class="p-11">
               <svg width="72" height="82" viewBox="0 0 72 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1210_2793)">
@@ -215,7 +227,7 @@
                 consectetur. Morbi diam nisi nam diam interdum</p>
             </div>
           </div>
-          <div class="md:w-1/2 sm:w-1/4 w-full bg-black-50">
+          <div class="lg:w-1/2 w-full bg-black-50">
             <div class="p-11">
               <svg width="72" height="82" viewBox="0 0 72 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1210_2793)">
@@ -571,7 +583,7 @@
           pretium</p>
         <div class="flex flex-row gap-4 p-6 w-1/2 mx-auto">
           <input class='p-3  md:grow grow-0 border-2 border-black-50 rounded-md' type="text" placeholder="Enter your email">
-          <button class="p-3 bg-orange-500 rounded-md text-center text-[white]">Contact Me</button>
+          <button class="p-3 bg-orange-500 rounded-md text-center text-[white] hover:bg-orange-400">Contact Me</button>
         </div>
       </div>
     </section>
@@ -712,13 +724,13 @@
                 xlink:href="data:image/png;base64,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" />
             </defs>
           </svg>
-          <div class="flex flex-row gap-6 space-x-10">
-            <div>Home</div>
-            <div>About Me</div>
-            <div>Services</div>
-            <div>Projects</div>
-            <div>Tesimonials</div>
-            <div>Contact</div>
+          <div class="flex flex-row gap-6 space-x-10 flex-wrap ">
+            <div class="hover:underline">Home</div>
+            <div class="hover:underline">About Me</div>
+            <div class="hover:underline">Services</div>
+            <div class="hover:underline">Projects</div>
+            <div class="hover:underline">Testimonials</div>
+            <div class="hover:underline">Contact</div>
           </div>
           <div class="flex flex-row gap-8 pb-6">
             <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
