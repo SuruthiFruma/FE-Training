@@ -1,11 +1,12 @@
 "use client"
-import { useEffect, useState } from "react";
-const UserUpdates= (query) =>{
+import { useEffect, useState , useRef} from "react";
+const UserUpdates = (query) =>{
+	let [userUpdates,setUserUpdates] = useState(null);
 	useEffect(()=>{
-		query.searchParams.then(data=>console.log("query data",data))
+		query.searchParams.then(data=>setUserUpdates(data))
 	},[])
 
-	return (<div onClick={()=>console.log("Final about",query)}>About</div>)
+	return userUpdates ? (<div className="text-body-12">{`Updates of ${userUpdates?.firstName }`}</div>) : "Loading...."
 	
 	}
 export default UserUpdates;

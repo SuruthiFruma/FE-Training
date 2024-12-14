@@ -1,11 +1,12 @@
 "use client"
-import { useEffect, useState } from "react";
+import { useEffect, useState , useRef} from "react";
 const UserAppointments = (query) =>{
+	let [userAppointments,setUserAppointments] = useState(null);
 	useEffect(()=>{
-		query.searchParams.then(data=>console.log("query data",data))
+		query.searchParams.then(data=>setUserAppointments(data))
 	},[])
 
-	return (<div onClick={()=>console.log("Final about",query)}>About</div>)
+	return userAppointments ? (<div className="text-body-12">>{`Appointments of ${userAppointments?.firstName }`}</div>) : "Loading...."
 	
 	}
 export default UserAppointments;

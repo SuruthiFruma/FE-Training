@@ -20,10 +20,10 @@ const AboutHeader = ({children,selectedUser}) => (
             <Avatar name="Suruthi" size="64" />
             <Box as="div">
               <Heading as="h2" className="text-heading-16">
-                Suruthi Fruma
+                {`${selectedUser?.firstName} ${selectedUser?.lastName} `}
               </Heading>
               <Box as="span" className="text-body-12">
-                Portland , US, 5:59PM
+                {`${selectedUser?.city} , ${selectedUser?.country} , ${selectedUser?.time}`}
               </Box>
             </Box>
           </Box>
