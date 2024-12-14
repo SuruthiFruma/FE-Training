@@ -6,7 +6,7 @@ const UserAbout = (query) =>{
 		query.searchParams.then(data=>setUserAbout(data))
 	},[])
 
-	return userAbout ? (<div className="text-body-12">>{`About of ${userAbout?.firstName }`}</div>) : "Loading...."
+	return userAbout ? (<div className="text-body-12">{`About of ${userAbout?.firstName }`}</div>) : "Loading...."
 	
 	}
 export default UserAbout;

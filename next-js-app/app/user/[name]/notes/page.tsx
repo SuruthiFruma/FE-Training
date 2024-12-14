@@ -6,7 +6,7 @@ const UserNotes = (query) =>{
 		query.searchParams.then(data=>setUserNotes(data))
 	},[])
 
-	return userNotes ? (<div className="text-body-12">>{`Notes of ${userNotes?.firstName }`}</div>) : "Loading...."
+	return userNotes ? (<div className="text-body-12">{`Notes of ${userNotes?.firstName }`}</div>) : "Loading...."
 	
 	}
 export default UserNotes;

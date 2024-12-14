@@ -6,7 +6,7 @@ const UserAppointments = (query) =>{
 		query.searchParams.then(data=>setUserAppointments(data))
 	},[])
 
-	return userAppointments ? (<div className="text-body-12">>{`Appointments of ${userAppointments?.firstName }`}</div>) : "Loading...."
+	return userAppointments ? (<div className="text-body-12">{`Appointments of ${userAppointments?.firstName }`}</div>) : "Loading...."
 	
 	}
 export default UserAppointments;
