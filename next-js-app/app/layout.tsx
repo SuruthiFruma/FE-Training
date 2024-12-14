@@ -61,7 +61,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [userData, setUserData] = useState<{ [key: string]: object }>({});
+  const [allUserData, setAllUserData] = useState<{ [key: string]: object }>({});
   const [selectedUser, setSelectedUser] = useState<string | null>(null);
   useEffect(() => {
     const fetchUserData = async () => {
@@ -71,9 +71,9 @@ export default function RootLayout({
       console.log(userResponse[Object.keys(userResponse)[0]]);
       console.log(userResponse);
 
-      setUserData(userResponse);
+      setAllUserData(userResponse);
       setSelectedUser(userResponse[Object.keys(userResponse)[0]]);
-      redirect(`/user/${Object.keys(userResponse)[0]}`);
+      redirect(`/user/${Object.keys(userResponse)[0].replace(" ","")}`);
     };
     fetchUserData();
   }, []);
@@ -146,9 +146,9 @@ export default function RootLayout({
               </Box>
 
               <Box as="div" className="h-3/4 overflow-y-scroll space-y-4">
-                {Object.keys(userData).map((user) => (
+                {Object.keys(allUserData).map((user) => (
                   <Link
-                    href={`/user/${user}`}
+                    href={`/user/${user.replace(" ","")}`}
                     key={user}
                     className="flex gap-4"
                   >

@@ -9,6 +9,6 @@ import {
 } from "@adaptavant/eds-core";
 
 const UserInfo = ({ params }) => {
-  return <div>{`Hello ${params.name.replace("%20", " ")}`}</div>;
+  return <div>{`Hello ${params.name}`}</div>;
 };
 export default UserInfo;
