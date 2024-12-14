@@ -55,6 +55,7 @@ import translations from "@adaptavant/eds-translations/english";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { redirect } from "next/navigation";
+import AboutHeader from "./about"
 
 export default function RootLayout({
   children,
@@ -153,14 +154,14 @@ export default function RootLayout({
                     className="flex gap-4"
                   >
                     <Avatar name={user} size="24" />
-                    <span className="text-body-12">{user}</span>
+                    <span className="text-body-12" onClick={()=>setSelectedUser(allUserData[user])}>{user}</span>
                   </Link>
                 ))}
               </Box>
             </Box>
-            <Box as="div" className="flex">
-              {children}
-            </Box>
+            
+              <AboutHeader children={children} selectedUser={selectedUser}/>
+            
           </Box>
         </Root>
       </body>
