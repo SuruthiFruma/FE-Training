@@ -19,10 +19,10 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const CustomerPanel = ({allUserData}) => {
+const CustomerPanel = ({allUserData,setSelectedUser}) => {
 
- 	return (<Box as="div" className="w-1/4 p-7">
-              <Box as="div" className="h-1/4 space-y-8">
+ 	return (<Box as="div" className="w-1/4 p-5">
+              <Box as="div" className="h-1/4 space-y-5">
                 <Track
                   railEnd={
                     <IconButton
@@ -66,7 +66,7 @@ const CustomerPanel = ({allUserData}) => {
                       </TextLink>
                     </Text>
                     <Text as="span" className="text-body-12">
-                      <TextLink variant="accentPrimary" href="#">
+                      <TextLink variant="regular" href="#">
                         Groups
                       </TextLink>
                     </Text>
@@ -74,7 +74,7 @@ const CustomerPanel = ({allUserData}) => {
                 </Track>
 
                 <Field label="Search" labelVisibility="hidden" size="standard">
-                  <SearchInput placeholder="Search" />
+                  <SearchInput placeholder="Search"/>
                 </Field>
               </Box>
 
