@@ -1,51 +1,96 @@
 import React, { useEffect } from "react";
-import { useContext, useRef } from "react";
+import { useState, useContext } from "react";
 import { UserContext } from "../context/userContext";
 import {
   Box,
   Track,
-  Icon,
+  MapPinIcon,
   PhoneIcon,
+  BankIcon,
+  GlobeIcon,
   MailIcon,
   BirthdayIcon,
+  InstagramIcon,
+  FacebookIcon,
+  TwitterIcon,
+  YoutubeIcon,
+  LinkedinIcon,
 } from "@adaptavant/eds-core";
-const UserAbout: React.FC = () => {
+import AboutUnit from "./AboutUnit";
+const UserAbout: React.FC = ({ selectedUser }) => {
   const { allUserData } = useContext(UserContext);
-  const selectedUserRef = useRef(null);
-  useEffect(() => {
-    selectedUserRef.current =
-      allUserData[location.pathname.replace("/user/", "")];
-    console.log(selectedUserRef.current);
-  });
   return (
-    <Track className="h-3/4 flex flex-col space-y-6 items-start text-body-12 p-3">
+    <Box
+      as="div"
+      className="h-3/4 flex flex-col gap-3 items-start text-body-12 p-3"
+    >
       {/* Phone number */}
       <Box className="flex gap-4">
-        <PhoneIcon />
+        <PhoneIcon size="16" />
         <Box as="div" className="flex flex-col gap-2">
-          {selectedUserRef.current?.phoneNumbers.map((phone) => (
-            <Box as="span">{phone}</Box>
+          {selectedUser?.phoneNumbers.map((phone) => (
+            <Box as="span" key={phone}>
+              {phone}
+            </Box>
           ))}
         </Box>
       </Box>
 
       {/* Email */}
       <Box className="flex gap-4">
-        <MailIcon />
+        <MailIcon size="16" />
         <Box as="div" className="flex flex-col gap-2">
-          {selectedUserRef.current?.emails.map((email) => (
-            <Box as="span">{email}</Box>
+          {selectedUser?.emails.map((email) => (
+            <Box as="span" key={email}>
+              {email}
+            </Box>
           ))}
         </Box>
       </Box>
 
-      <Box className="flex gap-4">
-        <BirthdayIcon />
-        <Box as="div" className="flex flex-col justify-center gap-2">
-          <Box as="span">{selectedUserRef?.current?.firstName}</Box>
-        </Box>
-      </Box>
-    </Track>
+      <AboutUnit
+        aboutIcon={<BirthdayIcon size="16" />}
+        aboutValue={selectedUser?.dateOfBirth}
+      />
+      <AboutUnit
+        aboutIcon={<BankIcon size="16" />}
+        aboutValue={selectedUser?.currentCompany}
+      />
+      <AboutUnit
+        aboutIcon={<MapPinIcon size="16" />}
+        aboutValue={selectedUser?.address}
+      />
+      <AboutUnit
+        aboutIcon={<GlobeIcon size="16" />}
+        aboutValue={selectedUser?.portfolio}
+        isHyperLink={true}
+      />
+      <AboutUnit
+        aboutIcon={<InstagramIcon size="16" />}
+        aboutValue={selectedUser?.instagram}
+        isHyperLink={true}
+      />
+      <AboutUnit
+        aboutIcon={<FacebookIcon size="16" />}
+        aboutValue={selectedUser?.facebook}
+        isHyperLink={true}
+      />
+      <AboutUnit
+        aboutIcon={<TwitterIcon size="16" />}
+        aboutValue={selectedUser?.twitter}
+        isHyperLink={true}
+      />
+      <AboutUnit
+        aboutIcon={<YoutubeIcon size="16" />}
+        aboutValue={selectedUser?.youtube}
+        isHyperLink={true}
+      />
+      <AboutUnit
+        aboutIcon={<LinkedinIcon size="16" />}
+        aboutValue={selectedUser?.linkedin}
+        isHyperLink={true}
+      />
+    </Box>
   );
 };
 

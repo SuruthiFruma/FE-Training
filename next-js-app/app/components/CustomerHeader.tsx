@@ -41,7 +41,7 @@ const CustomerHeader = ({ children, selectedUser }) => (
             <TabItem value="updates">Updates</TabItem>
           </TabList>
           <TabContent value="about">
-            <UserAbout />
+            <UserAbout selectedUser={selectedUser} />
           </TabContent>
           <TabContent value="notes">{}</TabContent>
           <TabContent value="integration">{}</TabContent>
