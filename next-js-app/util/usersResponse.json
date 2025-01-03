@@ -1,5 +1,5 @@
 {
-    "Aaron Adams": {
+    "AaronAdams": {
         "firstName": "Aaron",
         "lastName": "Adams",
         "city": "New York",
@@ -28,7 +28,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/aaronadams"
     },
-    "Bob Baker": {
+    "BobBaker": {
         "firstName": "Bob",
         "lastName": "Baker",
         "city": "Los Angeles",
@@ -57,7 +57,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/bobbaker"
     },
-    "Charlie Carter": {
+    "CharlieCarter": {
         "firstName": "Charlie",
         "lastName": "Carter",
         "city": "Chicago",
@@ -86,7 +86,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/charliecarter"
     },
-    "David Davis": {
+    "DavidDavis": {
         "firstName": "David",
         "lastName": "Davis",
         "city": "Dallas",
@@ -115,7 +115,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/davidadvis"
     },
-    "Emily Edwards": {
+    "EmilyEdwards": {
         "firstName": "Emily",
         "lastName": "Edwards",
         "city": "Edinburgh",
@@ -144,7 +144,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/emilyedwards"
     },
-    "Frank Franklin": {
+    "FrankFranklin": {
         "firstName": "Frank",
         "lastName": "Franklin",
         "city": "Frankfurt",
@@ -173,7 +173,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/frankfranklin"
     },
-    "Grace Garcia": {
+    "GraceGarcia": {
         "firstName": "Grace",
         "lastName": "Garcia",
         "city": "Geneva",
@@ -202,7 +202,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/gracegarcia"
     },
-    "Henry Harris": {
+    "HenryHarris": {
         "firstName": "Henry",
         "lastName": "Harris",
         "city": "Helsinki",
@@ -231,7 +231,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/henryharris"
     },
-    "Isabella Irwin": {
+    "IsabellaIrwin": {
         "firstName": "Isabella",
         "lastName": "Irwin",
         "city": "Istanbul",
@@ -260,7 +260,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/isabellairwin"
     },
-    "Jack Jackson": {
+    "JackJackson": {
         "firstName": "Jack",
         "lastName": "Jackson",
         "city": "Jakarta",
@@ -289,7 +289,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/jackjackson"
     },
-    "Karen Kelly": {
+    "KarenKelly": {
         "firstName": "Karen",
         "lastName": "Kelly",
         "city": "Kyoto",
@@ -318,7 +318,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/karenkelly"
     },
-    "Liam Lewis": {
+    "LiamLewis": {
         "firstName": "Liam",
         "lastName": "Lewis",
         "city": "Lisbon",
@@ -347,7 +347,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/liamlewis"
     },
-    "Mia Miller": {
+    "MiaMiller": {
         "firstName": "Mia",
         "lastName": "Miller",
         "city": "Milan",
@@ -376,7 +376,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/miamiller"
     },
-    "Noah Nelson": {
+    "NoahNelson": {
         "firstName": "Noah",
         "lastName": "Nelson",
         "city": "Nairobi",
@@ -405,7 +405,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/noahnelson"
     },
-    "Olivia Oliver": {
+    "OliviaOliver": {
         "firstName": "Olivia",
         "lastName": "Oliver",
         "city": "Osaka",
@@ -434,7 +434,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/oliviaoliver"
     },
-    "Penelope Parker": {
+    "PenelopeParker": {
         "firstName": "Penelope",
         "lastName": "Parker",
         "city": "Paris",
@@ -463,7 +463,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/penelopeparker"
     },
-    "Quentin Quinn": {
+    "QuentinQuinn": {
         "firstName": "Quentin",
         "lastName": "Quinn",
         "city": "Quebec",
@@ -492,7 +492,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/quentinquinn"
     },
-    "Riley Roberts": {
+    "RileyRoberts": {
         "firstName": "Riley",
         "lastName": "Roberts",
         "city": "Rome",
@@ -521,7 +521,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/rileyroberts"
     },
-    "Sophia Smith": {
+    "SophiaSmith": {
         "firstName": "Sophia",
         "lastName": "Smith",
         "city": "Sydney",
@@ -550,7 +550,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/sophiasmith"
     },
-    "Thomas Taylor": {
+    "ThomasTaylor": {
         "firstName": "Thomas",
         "lastName": "Taylor",
         "city": "Tokyo",
@@ -579,7 +579,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/thomastaylor"
     },
-    "Ursula Underwood": {
+    "UrsulaUnderwood": {
         "firstName": "Ursula",
         "lastName": "Underwood",
         "city": "Utrecht",
@@ -608,7 +608,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/ursulaunderwood"
     },
-    "Victoria Vance": {
+    "VictoriaVance": {
         "firstName": "Victoria",
         "lastName": "Vance",
         "city": "Vienna",
@@ -637,7 +637,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/victoriavance"
     },
-    "William Watson": {
+    "WilliamWatson": {
         "firstName": "William",
         "lastName": "Watson",
         "city": "Warsaw",
@@ -666,7 +666,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/williamwatson"
     },
-    "Xavier Xavier": {
+    "XavierXavier": {
         "firstName": "Xavier",
         "lastName": "Xavier",
         "city": "Xian",
@@ -695,7 +695,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/xavierxavier"
     },
-    "Yara Young": {
+    "YaraYoung": {
         "firstName": "Yara",
         "lastName": "Young",
         "city": "Yokohama",
@@ -724,7 +724,7 @@
         "youtube": "https://www.youtube.com/channel/UC1234567890",
         "linkedin": "https://www.linkedin.com/in/yarayoung"
     },
-    "Zara Zimmerman": {
+    "ZaraZimmerman": {
         "firstName": "Zara",
         "lastName": "Zimmerman",
         "city": "Zurich",

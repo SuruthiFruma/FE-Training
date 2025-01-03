@@ -6,8 +6,9 @@ import { Root, Box } from "@adaptavant/eds-core";
 import translations from "@adaptavant/eds-translations/english";
 import { useEffect, useState } from "react";
 import { redirect } from "next/navigation";
-import AboutHeader from "./AboutHeader";
-import CustomerPanel from "./CustomerPanel";
+import CustomerHeader from "./components/CustomerHeader.tsx";
+import CustomerPanel from "./components/CustomerPanel.tsx";
+import { UserContext } from "./context/userContext";
 import { UserResponse } from "../util/types";
 
 export default function RootLayout({
@@ -35,20 +36,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="">
-        <Root
-          className="h-[800px]"
-          brand={brand}
-          colorScheme="light"
-          translations={translations}
-        >
-          <Box as="div" className="flex h-full">
-            <CustomerPanel
-              allUserData={allUserData}
-              setSelectedUser={setSelectedUser}
-            />
-            <AboutHeader children={children} selectedUser={selectedUser} />
-          </Box>
-        </Root>
+        <UserContext.Provider value={{ allUserData }}>
+          <Root
+            className="h-[800px]"
+            brand={brand}
+            colorScheme="light"
+            translations={translations}
+          >
+            <Box as="div" className="flex h-full">
+              <CustomerPanel
+                allUserData={allUserData}
+                setSelectedUser={setSelectedUser}
+              />
+              <CustomerHeader children={children} selectedUser={selectedUser} />
+            </Box>
+          </Root>
+        </UserContext.Provider>
       </body>
     </html>
   );
