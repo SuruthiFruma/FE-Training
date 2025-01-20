@@ -18,6 +18,7 @@ export default function RootLayout({
 }) {
   const [allUserData, setAllUserData] = useState<UserResponse>({});
   const [selectedUser, setSelectedUser] = useState<string | null>(null);
+  const [notes, setNotes] = useState<string>("");
   useEffect(() => {
     const fetchUserData = async () => {
       const { default: userResponse } = await import(
@@ -32,7 +33,9 @@ export default function RootLayout({
     };
     fetchUserData();
   }, []);
-
+  useEffect(() => {
+    if (notes) setNotes("");
+  }, [selectedUser]);
   return (
     <html lang="en">
       <body className="">
@@ -48,7 +51,12 @@ export default function RootLayout({
                 allUserData={allUserData}
                 setSelectedUser={setSelectedUser}
               />
-              <CustomerHeader children={children} selectedUser={selectedUser} />
+              <CustomerHeader
+                children={children}
+                selectedUser={selectedUser}
+                notes={notes}
+                setNotes={setNotes}
+              />
             </Box>
           </Root>
         </UserContext.Provider>
