@@ -28,24 +28,26 @@ const UserNotes: React.FC = ({ selectedUser, notes, setNotes }) => {
   console.log(selectedUser?.firstName);
   const { allUserData } = useContext(UserContext);
   const [isEditFocused, setIsEditFocused] = useState(false);
-  let storedNotesRef = useRef<string | null>(null);
+  const [storedNotes, setStoredNotes] = useState<string | null>(null);
+  const [rerender, setRerender] = useState({});
+
   useEffect(() => {
-    storedNotesRef.current = localStorage.getItem(
-      `userNotes-${selectedUser?.firstName}`
+    console.log("inside useeffect");
+    setStoredNotes(
+      localStorage.getItem(`userNotes-${selectedUser?.firstName}`)
     );
-  }, [selectedUser]);
-  useEffect(() => {
-    setIsEditFocused(false);
   });
-  return storedNotesRef.current ? (
+  useEffect(() => {
+    setNotes(storedNotes);
+  }, [isEditFocused]);
+  return storedNotes ? (
     <Box as="div" className="flex m-4 gap-4">
       {isEditFocused ? (
-        <Box as="div" className="pt-3">
+        <Box as="div">
           <Field size="large" className="w-[540px]">
             <Textarea
               className=" h-[152px]"
-              placeholder="Add a note"
-              value={storedNotesRef.current}
+              value={notes}
               onChange={(e) => setNotes(e.target.value)}
             />
           </Field>
@@ -53,7 +55,13 @@ const UserNotes: React.FC = ({ selectedUser, notes, setNotes }) => {
             className="mt-4 w-[540px]"
             railEnd={
               <>
-                <Button variant="neutralTertiary" onClick={() => setNotes("")}>
+                <Button
+                  variant="neutralTertiary"
+                  onClick={() => {
+                    setNotes("");
+                    setIsEditFocused(false);
+                  }}
+                >
                   Cancel
                 </Button>
                 <Button
@@ -65,6 +73,8 @@ const UserNotes: React.FC = ({ selectedUser, notes, setNotes }) => {
                       notes
                     );
                     setNotes("");
+                    setIsEditFocused(false);
+                    setRerender({});
                   }}
                 >
                   Save
@@ -78,7 +88,7 @@ const UserNotes: React.FC = ({ selectedUser, notes, setNotes }) => {
           as="div"
           className="w-[540px] text-body-12 text-justify inline-block"
         >
-          {storedNotesRef.current}
+          {storedNotes}
         </Box>
       )}
 
