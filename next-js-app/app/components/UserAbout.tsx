@@ -28,12 +28,21 @@ const UserAbout: React.FC = ({ selectedUser }) => {
       <Box className="flex gap-4">
         <PhoneIcon size="16" />
         <Box as="div" className="flex flex-col gap-2">
-          {selectedUser?.phoneNumbers.map((phone) => (
-            <Box as="span" key={phone}>
-              {phone}
-            </Box>
-          ))}
+          {selectedUser?.phoneNumbers.map(
+            (phone, index) =>
+              index < 2 && (
+                <Box as="span" key={phone}>
+                  {phone}
+                </Box>
+              )
+          )}
         </Box>
+        <Track className="justify-end items-end">
+          <Box
+            as="span"
+            className="cursor-pointer hover:bg-neutral-active p-2 hover:rounded-full"
+          >{`( +${selectedUser?.phoneNumbers.length - 2} )`}</Box>
+        </Track>
       </Box>
 
       {/* Email */}
@@ -47,7 +56,6 @@ const UserAbout: React.FC = ({ selectedUser }) => {
           ))}
         </Box>
       </Box>
-
       <AboutUnit
         aboutIcon={<BirthdayIcon size="16" />}
         aboutValue={selectedUser?.dateOfBirth}
