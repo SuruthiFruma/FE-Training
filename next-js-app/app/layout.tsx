@@ -38,15 +38,10 @@ export default function RootLayout({
   }, [selectedUser]);
   return (
     <html lang="en">
-      <body className="">
+      <body className="h-screen w-screen">
         <UserContext.Provider value={{ allUserData }}>
-          <Root
-            className="h-[800px]"
-            brand={brand}
-            colorScheme="light"
-            translations={translations}
-          >
-            <Box as="div" className="flex h-full">
+          <Root brand={brand} colorScheme="light" translations={translations}>
+            <Box as="div" className="flex">
               <CustomerPanel
                 allUserData={allUserData}
                 setSelectedUser={setSelectedUser}

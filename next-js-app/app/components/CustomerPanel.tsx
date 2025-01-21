@@ -22,7 +22,7 @@ import { useEffect, useState } from "react";
 const CustomerPanel = ({ allUserData, setSelectedUser }) => {
   return (
     <Box as="div" className="w-1/4 p-5">
-      <Box as="div" className="h-1/4 space-y-5">
+      <Box as="div" className="space-y-5">
         <Track
           railEnd={
             <IconButton
@@ -70,7 +70,7 @@ const CustomerPanel = ({ allUserData, setSelectedUser }) => {
         </Field>
       </Box>
 
-      <Box as="div" className="h-3/4 overflow-y-scroll space-y-4">
+      <Box as="div" className="h-3/5 overflow-y-scroll space-y-4 mt-7">
         {Object.keys(allUserData).map((user) => (
           <Link
             href={`/user/${user.replace(" ", "")}`}
@@ -79,7 +79,7 @@ const CustomerPanel = ({ allUserData, setSelectedUser }) => {
           >
             <Box
               as="div"
-              className="flex gap-4 hover:bg-gray-100 rounded-lg cursor-pointer"
+              className="flex gap-4 hover:bg-neutral-active p-1 rounded-full cursor-pointer"
             >
               <Avatar name={user} size="24" />
               <span

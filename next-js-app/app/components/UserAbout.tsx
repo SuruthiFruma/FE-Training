@@ -14,11 +14,21 @@ import {
   FacebookIcon,
   TwitterIcon,
   YoutubeIcon,
+  ClipboardCopyIcon,
   LinkedinIcon,
+  DropdownMenu,
+  IconButton,
+  DropdownMenuPopover,
+  DropdownMenuList,
+  DropdownMenuTrigger,
+  DropdownMenuItem,
+  DropDownMenu,
 } from "@adaptavant/eds-core";
 import AboutUnit from "./AboutUnit";
+import { is } from "../../.next/server/vendor-chunks/next@15.0.3_react-dom@18.3.1_react@18.3.1__react@18.3.1";
 const UserAbout: React.FC = ({ selectedUser }) => {
   const { allUserData } = useContext(UserContext);
+  const [dropDownOpen, setDropDownOpen] = useState(false);
   return (
     <Box
       as="div"
@@ -38,10 +48,21 @@ const UserAbout: React.FC = ({ selectedUser }) => {
           )}
         </Box>
         <Track className="justify-end items-end">
-          <Box
-            as="span"
-            className="cursor-pointer hover:bg-neutral-active p-2 hover:rounded-full"
-          >{`( +${selectedUser?.phoneNumbers.length - 2} )`}</Box>
+          <DropdownMenu>
+            <DropdownMenuTrigger>{`( +${
+              selectedUser?.phoneNumbers.length - 2
+            } )`}</DropdownMenuTrigger>
+            <DropdownMenuPopover>
+              <DropdownMenuList></DropdownMenuList>
+              {selectedUser?.phoneNumbers.slice(2).map((phone, index) => (
+                <DropdownMenuItem key={index}>
+                  <Track railEnd={<ClipboardCopyIcon></ClipboardCopyIcon>}>
+                    {phone}
+                  </Track>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuPopover>
+          </DropdownMenu>
         </Track>
       </Box>
 
@@ -49,11 +70,14 @@ const UserAbout: React.FC = ({ selectedUser }) => {
       <Box className="flex gap-4">
         <MailIcon size="16" />
         <Box as="div" className="flex flex-col gap-2">
-          {selectedUser?.emails.map((email) => (
-            <Box as="span" key={email}>
-              {email}
-            </Box>
-          ))}
+          {selectedUser?.emails.map(
+            (email, index) =>
+              index < 2 && (
+                <Box as="span" key={email}>
+                  {email}
+                </Box>
+              )
+          )}
         </Box>
       </Box>
       <AboutUnit
