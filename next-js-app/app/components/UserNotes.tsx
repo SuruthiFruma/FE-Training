@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState, useContext, useRef } from "react";
 import { UserContext } from "../context/userContext";
+import { DeleteModal } from "./DeleteModal";
 import {
   Box,
   Track,
@@ -30,6 +31,7 @@ const UserNotes: React.FC = ({ selectedUser, notes, setNotes }) => {
   const [isEditFocused, setIsEditFocused] = useState(false);
   const [storedNotes, setStoredNotes] = useState<string | null>(null);
   const [rerender, setRerender] = useState({});
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     console.log("inside useeffect");
@@ -40,6 +42,17 @@ const UserNotes: React.FC = ({ selectedUser, notes, setNotes }) => {
   useEffect(() => {
     setNotes(storedNotes);
   }, [isEditFocused]);
+  function onModalOpen() {
+    setOpenModal(true);
+    console.log("modal opened");
+    document.querySelector("body").style.overflow = "hidden";
+  }
+
+  function onModalClose() {
+    setOpenModal(false);
+    console.log("modal close");
+    document.querySelector("body").style.overflow = "unset";
+  }
   return storedNotes ? (
     <Box as="div" className="flex m-4 gap-4">
       {isEditFocused ? (
@@ -95,9 +108,14 @@ const UserNotes: React.FC = ({ selectedUser, notes, setNotes }) => {
       <Box as="div" onClick={() => setIsEditFocused(true)}>
         <EditIcon size="16" className="cursor-pointer" />
       </Box>
-      <Box as="div">
+      <Box as="div" onClick={onModalOpen}>
         <DeleteIcon size="16" className="cursor-pointer" />
       </Box>
+      <DeleteModal
+        openModal={openModal}
+        onModalClose={onModalClose}
+        selectedUser={selectedUser}
+      />
     </Box>
   ) : (
     <Box as="div" className="pt-3">
