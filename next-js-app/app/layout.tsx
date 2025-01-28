@@ -4,6 +4,7 @@ import "./globals.css";
 import brand from "@adaptavant/eds-brands/setmore";
 import { Root, Box } from "@adaptavant/eds-core";
 import translations from "@adaptavant/eds-translations/english";
+import { Loading } from "@adaptavant/eds-core";
 import { useEffect, useState } from "react";
 import { redirect } from "next/navigation";
 import CustomerHeader from "./components/CustomerHeader.tsx";
@@ -41,18 +42,27 @@ export default function RootLayout({
       <body className="h-screen w-screen">
         <UserContext.Provider value={{ allUserData }}>
           <Root brand={brand} colorScheme="light" translations={translations}>
-            <Box as="div" className="flex">
-              <CustomerPanel
-                allUserData={allUserData}
-                setSelectedUser={setSelectedUser}
-              />
-              <CustomerHeader
-                children={children}
-                selectedUser={selectedUser}
-                notes={notes}
-                setNotes={setNotes}
-              />
-            </Box>
+            {Object.keys(allUserData).length === 0 ? (
+              <Box
+                as="div"
+                className="h-screen flex justify-center items-center"
+              >
+                <Loading size="80" />
+              </Box>
+            ) : (
+              <Box as="div" className="flex">
+                <CustomerPanel
+                  allUserData={allUserData}
+                  setSelectedUser={setSelectedUser}
+                />
+                <CustomerHeader
+                  children={children}
+                  selectedUser={selectedUser}
+                  notes={notes}
+                  setNotes={setNotes}
+                />
+              </Box>
+            )}
           </Root>
         </UserContext.Provider>
       </body>

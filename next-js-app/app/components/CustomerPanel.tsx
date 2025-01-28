@@ -1,5 +1,4 @@
 import {
-  Root,
   Box,
   Track,
   Heading,
@@ -17,7 +16,6 @@ import {
   Avatar,
 } from "@adaptavant/eds-core";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 const CustomerPanel = ({ allUserData, setSelectedUser }) => {
   return (

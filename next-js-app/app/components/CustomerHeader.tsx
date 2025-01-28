@@ -35,7 +35,7 @@ const CustomerHeader = ({ children, selectedUser, notes, setNotes }) => {
             </Box>
           </Box>
 
-          <Tabs defaultValue="About" className="mt-8">
+          <Tabs defaultValue="about" className="mt-8">
             <TabList>
               <TabItem value="about">About</TabItem>
               <TabItem value="notes">Notes</TabItem>
