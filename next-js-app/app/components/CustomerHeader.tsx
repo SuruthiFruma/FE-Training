@@ -1,10 +1,5 @@
-"use client";
-import { useState } from "react";
 import {
-  AddIcon,
   Box,
-  IconButton,
-  Track,
   Stack,
   Avatar,
   Heading,
@@ -13,9 +8,9 @@ import {
   TabItem,
   TabContent,
 } from "@adaptavant/eds-core";
-import Link from "next/link";
 import UserAbout from "./UserAbout";
 import UserNotes from "./UserNotes";
+
 const CustomerHeader = ({ children, selectedUser, notes, setNotes }) => {
   return (
     <Box as="div" className="w-3/4">

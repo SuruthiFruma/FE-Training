@@ -65,7 +65,7 @@ const PopOver = ({ selectedUser }) => {
         onClick={toggleOpen}
         ref={triggerRef}
         variant="neutralSecondary"
-        className="cursor-pointer"
+        className="hover:bg-neutral-active p-1 rounded-full cursor-pointer"
       >
         {`( +${selectedUser?.phoneNumbers?.length - 2} )`}
       </Box>

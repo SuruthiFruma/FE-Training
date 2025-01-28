@@ -68,7 +68,7 @@ const CustomerPanel = ({ allUserData, setSelectedUser }) => {
         </Field>
       </Box>
 
-      <Box as="div" className="h-3/5 overflow-y-scroll space-y-4 mt-7">
+      <Box as="div" className="h-3/4 overflow-y-scroll space-y-4 mt-7">
         {Object.keys(allUserData).map((user) => (
           <Link
             href={`/user/${user.replace(" ", "")}`}

@@ -2,8 +2,6 @@ import {
   Modal,
   ModalHeader,
   Heading,
-  ModalContent,
-  Text,
   ModalFooter,
   Button,
 } from "@adaptavant/eds-core";

@@ -50,7 +50,7 @@ export default function RootLayout({
                 <Loading size="80" />
               </Box>
             ) : (
-              <Box as="div" className="flex">
+              <Box as="div" className="h-screen flex">
                 <CustomerPanel
                   allUserData={allUserData}
                   setSelectedUser={setSelectedUser}

@@ -1,33 +1,18 @@
-import React, { useEffect } from "react";
-import { useState, useContext, useRef } from "react";
-import { UserContext } from "../context/userContext";
+import React from "react";
+import { useState, useEffect } from "react";
+
 import { DeleteModal } from "./DeleteModal";
 import {
   Box,
   Track,
-  MapPinIcon,
-  PhoneIcon,
-  BankIcon,
-  GlobeIcon,
-  MailIcon,
-  BirthdayIcon,
-  InstagramIcon,
-  FacebookIcon,
-  TwitterIcon,
-  YoutubeIcon,
-  LinkedinIcon,
   Field,
   Textarea,
   DeleteIcon,
   EditIcon,
   Button,
-  Stack,
 } from "@adaptavant/eds-core";
-import AboutUnit from "./AboutUnit";
-import { ST } from "next/dist/shared/lib/utils";
 const UserNotes: React.FC = ({ selectedUser, notes, setNotes }) => {
   console.log(selectedUser?.firstName);
-  const { allUserData } = useContext(UserContext);
   const [isEditFocused, setIsEditFocused] = useState(false);
   const [storedNotes, setStoredNotes] = useState<string | null>(null);
   const [rerender, setRerender] = useState({});
