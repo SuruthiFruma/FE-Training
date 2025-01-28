@@ -1,13 +1,6 @@
 import React from "react";
 
-import {
-  Box,
-  Popover,
-  Button,
-  Text,
-  Emoji,
-  usePopover,
-} from "@adaptavant/eds-core";
+import { Box, Popover, Text, Emoji, usePopover } from "@adaptavant/eds-core";
 
 const PopOver = ({ selectedUser }) => {
   const [isOpen, setIsOpen] = React.useState(false);
