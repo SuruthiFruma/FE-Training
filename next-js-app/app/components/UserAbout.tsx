@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
-import { useState, useContext } from "react";
-import { UserContext } from "../context/userContext";
+import React from "react";
+
 import {
   Box,
   Track,
@@ -14,21 +13,11 @@ import {
   FacebookIcon,
   TwitterIcon,
   YoutubeIcon,
-  ClipboardCopyIcon,
   LinkedinIcon,
-  DropdownMenu,
-  IconButton,
-  DropdownMenuPopover,
-  DropdownMenuList,
-  DropdownMenuTrigger,
-  DropdownMenuItem,
-  DropDownMenu,
 } from "@adaptavant/eds-core";
 import AboutUnit from "./AboutUnit";
-import { is } from "../../.next/server/vendor-chunks/next@15.0.3_react-dom@18.3.1_react@18.3.1__react@18.3.1";
+import { PopOver } from "./PopOver";
 const UserAbout: React.FC = ({ selectedUser }) => {
-  const { allUserData } = useContext(UserContext);
-  const [dropDownOpen, setDropDownOpen] = useState(false);
   return (
     <Box
       as="div"
@@ -48,21 +37,7 @@ const UserAbout: React.FC = ({ selectedUser }) => {
           )}
         </Box>
         <Track className="justify-end items-end">
-          <DropdownMenu>
-            <DropdownMenuTrigger>{`( +${
-              selectedUser?.phoneNumbers.length - 2
-            } )`}</DropdownMenuTrigger>
-            <DropdownMenuPopover>
-              <DropdownMenuList></DropdownMenuList>
-              {selectedUser?.phoneNumbers.slice(2).map((phone, index) => (
-                <DropdownMenuItem key={index}>
-                  <Track railEnd={<ClipboardCopyIcon></ClipboardCopyIcon>}>
-                    {phone}
-                  </Track>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuPopover>
-          </DropdownMenu>
+          <PopOver selectedUser={selectedUser}></PopOver>
         </Track>
       </Box>
 
