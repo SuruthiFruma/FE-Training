@@ -80,12 +80,13 @@ const CustomerPanel = ({ allUserData, setSelectedUser }) => {
               className="flex gap-4 hover:bg-neutral-active p-1 rounded-full cursor-pointer"
             >
               <Avatar name={user} size="24" />
-              <span
+              <Box
+                as="span"
                 className="text-body-12"
                 onClick={() => setSelectedUser(allUserData[user])}
               >
                 {user}
-              </span>
+              </Box>
             </Box>
           </Link>
         ))}

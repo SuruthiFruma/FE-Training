@@ -21,7 +21,7 @@ const UserAbout: React.FC = ({ selectedUser }) => {
   return (
     <Box
       as="div"
-      className="h-3/4 flex flex-col gap-3 items-start text-body-12 p-3"
+      className="h-3/4 flex flex-col gap-4 items-start text-body-12 p-3"
     >
       {/* Phone number */}
       <Box className="flex gap-4">
