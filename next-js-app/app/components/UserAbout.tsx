@@ -17,7 +17,12 @@ import {
 } from "@adaptavant/eds-core";
 import AboutUnit from "./AboutUnit";
 import { PopOver } from "./PopOver";
-const UserAbout: React.FC = ({ selectedUser }) => {
+import { User } from "@/util/types";
+interface UserAboutProps {
+  selectedUser: User;
+}
+
+const UserAbout: React.FC<UserAboutProps> = ({ selectedUser }) => {
   return (
     <Box
       as="div"
